@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+ Tudo bem, professor? Não pude comparecer à sua última aula e fiquei com uma dúvida sobre a atividade.
+ No Canva, é mencionado que devemos criar uma página pessoal sobre "um aluno".
+ Minha dúvida é se esse aluno deve ser uma pessoa fictícia ou se deve representar
+ a mim mesmo.
+ Acabei criando uma pessoa fictícia, e toda a página da web ficou apenas como um
+ "esqueleto", já que a pessoa dona da página não existe.
+ De qualquer forma, peço desculpas caso não seja isso que o senhor queria para a
+ atividade e obrigado por ter lido até aqui :D
+-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal</title>
+</head>
+<body>
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('projetos')">Projetos pessoais</a>
+        <a href="#" onclick="showSection('hobbies')">Hobbies</a>
+        <a href="#" onclick="showSection('contato')">Contato</a>
+    </nav>
+    
+    <section id="home" class="section" style="display: block;">
+        <h1>Joãozinho</h1>
+        <p>Olá! Me chamo Joãozinho e essa é uma página dedicada a mostrar algumas
+           informações pessoais minhas que podem te interessar! Nesta página, você
+           poderá encontrar alguns dos meus projetos pessoais, meus hobbies e meios
+           de contato.</p>
+        <img src="foto.jpg" alt="foto do joao" style="width: 150px; border-radius: 50%;">
+    </section>
+    
+    <section id="projetos" class="section" style="display: none;">
+        <h1>Projetos Pessoais</h1>
+        <p>Aqui você pode dar uma olhada em alguns dos meus projetos pessoais! Se interessou
+           por algo? Entre em contato comigo!
+        </p>
+        <ul>
+            <li><strong>Projeto 1:</strong> * descrição *</li>
+            <li><strong>Projeto 2:</strong> * descrição *</li>
+        </ul>
+    </section>
+    
+    <section id="hobbies" class="section" style="display: none;">
+        <h1>Hobbies</h1>
+        <p>Aqui estão alguns dos meus hobbies e interesses</p>
+        <ul>
+            <li>Hobby 1 - * descrição *</li>
+            <li>Hobby 2 - * descrição *</li>
+        </ul>
+    </section>
+    
+    <section id="contato" class="section" style="display: none;">
+        <h1>Contato</h1>
+        <p>Email: joaozinhoo@gmail.com</p>
+        <p>Telefone: (XX) XXXX-XXXX</p>
+        <p><a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+    </section>
+    
+    <script>
+        function showSection(sectionId) {
+            var sections = document.getElementsByClassName('section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
