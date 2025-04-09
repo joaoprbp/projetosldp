@@ -1,64 +1,59 @@
 <!DOCTYPE html>
-<!--
- Tudo bem, professor? Não pude comparecer à sua última aula e fiquei com uma dúvida sobre a atividade.
- No Canva, é mencionado que devemos criar uma página pessoal sobre "um aluno".
- Minha dúvida é se esse aluno deve ser uma pessoa fictícia ou se deve representar
- a mim mesmo.
- Acabei criando uma pessoa fictícia, e toda a página da web ficou apenas como um
- "esqueleto", já que a pessoa dona da página não existe.
- De qualquer forma, peço desculpas caso não seja isso que o senhor queria para a
- atividade e obrigado por ter lido até aqui :D
--->
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Pessoal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="#" onclick="showSection('home')">Home</a>
-        <a href="#" onclick="showSection('projetos')">Projetos pessoais</a>
-        <a href="#" onclick="showSection('hobbies')">Hobbies</a>
-        <a href="#" onclick="showSection('contato')">Contato</a>
-    </nav>
-    
-    <section id="home" class="section" style="display: block;">
-        <h1>Joãozinho</h1>
-        <p>Olá! Me chamo Joãozinho e essa é uma página dedicada a mostrar algumas
-           informações pessoais minhas que podem te interessar! Nesta página, você
-           poderá encontrar alguns dos meus projetos pessoais, meus hobbies e meios
-           de contato.</p>
-        <img src="foto.jpg" alt="foto do joao" style="width: 150px; border-radius: 50%;">
-    </section>
-    
-    <section id="projetos" class="section" style="display: none;">
-        <h1>Projetos Pessoais</h1>
-        <p>Aqui você pode dar uma olhada em alguns dos meus projetos pessoais! Se interessou
-           por algo? Entre em contato comigo!
-        </p>
-        <ul>
-            <li><strong>Projeto 1:</strong> * descrição *</li>
-            <li><strong>Projeto 2:</strong> * descrição *</li>
-        </ul>
-    </section>
-    
-    <section id="hobbies" class="section" style="display: none;">
-        <h1>Hobbies</h1>
-        <p>Aqui estão alguns dos meus hobbies e interesses</p>
-        <ul>
-            <li>Hobby 1 - * descrição *</li>
-            <li>Hobby 2 - * descrição *</li>
-        </ul>
-    </section>
-    
-    <section id="contato" class="section" style="display: none;">
-        <h1>Contato</h1>
-        <p>Email: joaozinhoo@gmail.com</p>
-        <p>Telefone: (XX) XXXX-XXXX</p>
-        <p><a href="#">Instagram</a> | <a href="#">Facebook</a></p>
-    </section>
-    
+    <header>
+        <nav>
+            <a href="#" onclick="showSection('home')">Home</a>
+            <a href="#" onclick="showSection('projetos')">Projetos</a>
+            <a href="#" onclick="showSection('hobbies')">Hobbies</a>
+            <a href="#" onclick="showSection('contato')">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section" style="display: block;">
+            <h1 id="titulo">João Paulo</h1>
+            <p>Olá! Me chamo João Paulo e essa é minha página pessoal como estudo em html!</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRX1Shs5xixXevJzuGx6PJsju3I8fzZKJ0Qw&s" 
+                 alt="Foto (não) minha" class="foto">
+        </section>
+
+        <section id="projetos" class="section" style="display: none;">
+            <h2>Projetos</h2>
+            <ul>
+                <li><strong>Projeto 1:</strong> Criando um sistema para barbearia</li>
+                <li><strong>Projeto 2:</strong> Estudando para criar um sistema escolar</li>
+            </ul>
+        </section>
+
+        <section id="hobbies" class="section" style="display: none;">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Jogar com meus amigos</li>
+                <li>Estudar outras linguagens de programação</li>
+            </ul>
+            <h3>Vídeo que gosto:</h3>
+            <iframe width="300" height="200" src="https://youtu.be/ZZY-Ytrw2co?si=wc6vNYvvlD74C7kX" allowfullscreen></iframe>
+        </section>
+
+        <section id="contato" class="section" style="display: none;">
+            <h2>Contato</h2>
+            <p>Email: joaopaulorbp7@gmail.com</p>
+            <p>Telefone: (15) 988186799</p>
+            <p><a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 JoãoP</p>
+    </footer>
+
     <script>
         function showSection(sectionId) {
             var sections = document.getElementsByClassName('section');
