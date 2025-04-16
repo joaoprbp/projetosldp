@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start;
+  background: #d0f0c0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: #d0f0c0;
+  justify-content: flex-start;
+}
+
+.quadrado {
+    width: 60%;
+    justify-content: center;
+}
+
+.quadrado2 {
+    width: 100%;
+    align-items: center;
+}
+
+.quadrado3 {
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagens {
+  width: 200px;
+  height: 200px;
+  border: 7px solid #333;
+}
+
+.imagens2 {
+    width: 200px;
+    height: 180px;
+    border: 7px solid #333;
+  }
+
+#cavalo {
+  align-self: flex-end;
+}
+#cavalo2 {
+  align-self: flex-end;
+  order: 1;
+}
+.fase1 {
+  justify-content: flex-end;
+}
+
+.fase2 {
+  justify-content: center;
+}
+
+.fase3 {
+  justify-content: space-around;
+}
+
+.fase4 {
+  justify-content: space-between;
+}
+.fase5 {
+  align-items: flex-end;
+}
+.fase6 {
+  align-items: center;
+  justify-content: center;
+}
+.fase7 {
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.fase8 {
+  flex-direction: row-reverse;
+}
+.fase9 {
+  flex-direction: column;
+}
+.fase10 {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.fase11 {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.fase12 {
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+.fase13 {
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-end;
+}
+.fase14 {
+  order: 1;
+}
+.fase15 {
+  order: -3;
+}
+.fase16 {
+  align-self: flex-end;
+  justify-content: center;
+}
+.fase17 {
+  align-self: flex-end;
+  order: 1;
+  justify-content: center;
+}
+.fase18 {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fase19 {
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.fase20 {
+  flex-flow: column wrap;
+}
+.fase21 {
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+.fase22 {
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+.fase23 {
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.fase24 {
+  flex-flow: column-reverse wrap-reverse;
+  justify-content: center;
+  align-content: space-between;
+}
